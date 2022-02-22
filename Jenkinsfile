@@ -25,7 +25,7 @@ triggers {
         // withCredentials([
         //   usernamePassword(credentialsId: 'mvnmgr-github-readonly', passwordVariable: 'GITHUBPIE_PSW', usernameVariable: 'GITHUBPIE_USR')
         //   ])
-              sh 'python3 sum.py'
+              sh 'python3 sum.py '+"${params.x}" + ' '+"${params.y}" + ''
             
       }
     }
